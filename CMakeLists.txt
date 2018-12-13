@@ -59,6 +59,6 @@ endif()
 ################################################################################
 
 # test case 1
-add_executable(TrieTest test/TrieTest.cpp)
-target_link_libraries(TrieTest anafind)
-add_test(TrieTest TrieTest)
+add_executable(BasicTest test/BasicTest.cpp)
+target_link_libraries(BasicTest anafind)
+add_test(BasicTest BasicTest)
