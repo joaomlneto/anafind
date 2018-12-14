@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/joaomlneto/anafind.svg?token=QsVQsaqyQNrgjyTyzV4W&branch=master)](https://travis-ci.com/joaomlneto/anafind)
+
 # anafind
 C++ library to find anagrams in a dictionary.
 
