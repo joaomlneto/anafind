@@ -25,7 +25,7 @@ std::string Dictionary::wordKey(const std::string& word) {
 }
 
 void Dictionary::loadWords(const std::string& filename) {
-  std::ifstream file("test/dictionaries/small.txt");
+  std::ifstream file(filename);
   loadWords(file);
 }
 
