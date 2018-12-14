@@ -6,8 +6,10 @@ This solution is optimized for a high query ratio (number of queries / size of t
 # Complexity Analysis
 
 Some definitions:
-- `N` denotes the number of words in the dictionary
-- `L` denotes the length of a word
+- `N` denotes the *number of words in a dictionary*
+- `L` denotes the *length of a word*
+
+We assume `N` >> `L`.
 
 We have to take into account the time it takes to
 1. Load (and preprocess) the dictionary and
@@ -16,6 +18,10 @@ We have to take into account the time it takes to
 2. Lookup the anagram of a given word.
   - Worst case: `O(N)`
   - Average case: `O(1)`
+
+An alternative implementation is to swap the HashMap for a TreeMap, causing both worst cases and average cases to be `O(N*log(N)^2)` for insertion and `O(log(N))` for lookups.
+
+Below is a slightly more verbose discussion on these results.
 
 ## Loading the Dictionary
 
