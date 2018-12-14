@@ -56,3 +56,6 @@ fpthread_config.cmake
 /cppcheck-report
 
 cmake_uninstall.cmake
+
+# generated files
+/BasicTest
